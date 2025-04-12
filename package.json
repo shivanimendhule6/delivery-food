@@ -1,0 +1,27 @@
+{
+  "name": "react-hooks",
+  "version": "1.0.0",
+  "description": "React Hooks",
+  "scripts": {
+    "start": "npx parcel index.html",
+    " build": "npx parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shivanimendhule6/food-delivery.git"
+  },
+  "author": "shivani mendhule",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivanimendhule6/"
+  },
+  "homepage": "https://github.com/shivanimendhule6/",
+  "devDependencies": {
+    "parcel": "^2.14.1"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
