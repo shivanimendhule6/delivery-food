@@ -25,7 +25,6 @@ const Applayout = () => {
             {/* <Number />  */}
             <div className="app">
                 <Header />
-                <Header />
                 <Outlet/>
                 <Footer />
             </div>
