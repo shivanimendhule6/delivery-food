@@ -22,7 +22,6 @@ const Footer = () => {
 const Applayout = () => {
     return (
         <div>
-            {/* <Number />  */}
             <div className="app">
                 <Header />
                 <Outlet/>
