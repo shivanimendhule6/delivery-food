@@ -20,7 +20,7 @@ class UserClassGit extends Component{
         this.setState ({
             userInfo : json,
         });
-        console.log(json);
+
     }
 
     render(){
