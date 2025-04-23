@@ -1,12 +1,20 @@
 import React from "react";
+import UserClassGit from "./UserClassGit";
 
-const About = () => {
+class About extends React.Component{
+constructor(props){
+    super(props)
+}
+
+render(){
     return(
-        <div> 
-            <h1>About</h1>
-            <h2>This is the About Page</h2>
+        <div className="about-page">
+        <UserClassGit/>
         </div>
-    );
+
+    )
+}
+
 }
 
 export default About;
