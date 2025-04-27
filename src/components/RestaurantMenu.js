@@ -15,7 +15,7 @@ const RestaurantMenu = () => {
         <>
         <h1>{name}</h1>
         <h3>{cuisines. join(" , ")}</h3>
-        <>{costForTwoMessage}</>
+        <h3>{costForTwoMessage}</h3>
         </>
     );
 }
