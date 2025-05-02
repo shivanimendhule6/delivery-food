@@ -4,4 +4,4 @@ export const CDN_URL =
 export const LOGO_URL =
   'https://png.pngtree.com/png-vector/20230217/ourmid/pngtree-food-logo-design-for-restaurant-and-business-png-image_6604922.png';
 
-export const MENU_API ='https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.0938434&lng=79.07501380000001&restaurantId=';
+export const MENU_API ='https://proxy.corsfix.com/?https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.0938434&lng=79.07501380000001&restaurantId=';

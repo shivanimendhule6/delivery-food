@@ -9,7 +9,7 @@ const RestaurantMenu = () => {
 
     if (!resInfo) return <h2>Loading menu...</h2>;
 
-    const { name, cuisines ,costForTwoMessage } = resInfo?.cards?.[2]?.card?.card?.info;
+    const { name, cuisines ,costForTwoMessage } = resInfo?.cards[2]?.card?.card?.info;
 
     return(
         <>
