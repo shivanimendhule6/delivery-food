@@ -43,9 +43,9 @@ const Body = () => {
       <div className="filter flex">
         <div className="search m-4 p-4">
           <input
-            type="text"
+            type="text" style={{background:"oklch(96.7% .003 264.542)"}}
             placeholder="Search a restaurant you want..."
-            className="searchBox"
+            className="searchBox px-4 py-2 rounded-lg"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
@@ -53,8 +53,6 @@ const Body = () => {
           />
           <button className="px-4 py-2 bg-green-100 m-4 rounded-lg cursor-pointer"
             onClick={() => {
-              console.log(searchText);
-
               const filteredRestaurant = listOfRestaurants.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );
@@ -70,7 +68,7 @@ const Body = () => {
               className="px-4 py-2 bg-gray-100 m-4 rounded-lg cursor-pointer"
               onClick={() => {
                   const filteredList = listOfRestaurants.filter(
-                  (res) => res.info.avgRating > 4
+                  (res) => res.info.avgRating > 2
                   );
                   setFilteredRestaurant(filteredList);
               }}
