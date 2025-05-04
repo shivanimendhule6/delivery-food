@@ -11,6 +11,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState('');
 
   // Higher order Component
+  
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
   useEffect(() => {
@@ -29,12 +30,13 @@ const Body = () => {
     setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setFilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
-    const onlineStatus = useOnlineStatus();
-    if(onlineStatus === false){
-      return(<h1 style={{ textAlign: 'center', marginTop: '100px' }}>
-        Looks like you're offline! Please check your internet connection
-      </h1>);
-    }
+
+  const onlineStatus = useOnlineStatus();
+  if(onlineStatus === false){
+    return(<h1 style={{ textAlign: 'center', marginTop: '100px' }}>
+      Looks like you're offline! Please check your internet connection
+    </h1>);
+  }
 
   return listOfRestaurants?.length === 0 ? (
     <Shimmer />
@@ -77,7 +79,7 @@ const Body = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center">
         {filteredRestaurant?.map((restaurant) => (
             <Link
             style={{

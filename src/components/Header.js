@@ -7,7 +7,7 @@ const Header =() =>{
 const [btnNameReact, setBtnNameReact] = useState('Logout');
 const onlineStatus = useOnlineStatus();
 return(
-    <div className="header flex justify-between p-2 mb-7 drop-shadow-lg items-center bg-orange-100"> 
+    <div className="header flex justify-between p-2 mb-7 drop-shadow-lg items-center bg-orange-100">
         <div className="logo-container w-20">
             <img src={ LOGO_URL } alt="App Logo" className="logo"/>
         </div>

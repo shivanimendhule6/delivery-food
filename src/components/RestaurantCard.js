@@ -25,12 +25,12 @@ const RestaurantCard = (props) => {
         alt="Biryani"
       />
 
-      <div className="font-bold py-4 text-lg">
-        <h3>{name}</h3>
+      <div className="py-4 text-lg">
+        <h3 className="text-lg font-bold">{name}</h3>
         <hr />
-        <em>{cuisines.join(', ')}</em>
-        <h4>{avgRating} stars</h4>
-        <h4>{sla.slaString} minutes</h4>
+        <p className="text-base font-medium">{cuisines.join(', ')}</p>
+        <p className="text-sm font-medium">⭐{avgRating}</p>
+        <p className="text-sm font-medium">{sla.slaString} minutes</p>
       </div>
     </div>
   );
