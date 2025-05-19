@@ -30,7 +30,7 @@ const ItemList = ({data , showAddButton = true}) =>{
             <div className="w-3/12 p-4">
             {showAddButton && (<div className="absolute">
               <button
-                className="p-2 ml-8 mt-[30px] rounded-lg bg-black text-white shadow-lg hover:bg-white  hover:text-black transition-all duration-[.3s]"
+                className="p-2 ml-8 mt-[30px] rounded-lg bg-black text-white shadow-lg hover:bg-white  hover:text-black transition-all duration-[.3s] cursor-pointer"
                 onClick={() => handleAddItem(data)}
               >
                 Add +
